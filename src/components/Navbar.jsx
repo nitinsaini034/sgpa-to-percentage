@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import downloadPng from "../assets/download.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-xl font-bold text-blue-600">
-         <img src="/src/assets/download.png" alt="" className="h-14 w-32"/>
+         <img src={downloadPng} alt="SGPA Calculator Logo" className="h-14 w-32"/>
         </Link>
 
         {/* Desktop Menu */}
