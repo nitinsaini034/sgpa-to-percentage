@@ -45,7 +45,6 @@ export default function EffectiveCalculatorUsePage() {
             className="prose prose-sm sm:prose-base lg:prose-lg xl:prose-xl max-w-none text-card-foreground
                        prose-headings:text-primary prose-a:text-accent hover:prose-a:text-accent/80
                        prose-strong:text-card-foreground prose-blockquote:border-primary prose-blockquote:text-muted-foreground"
-            dangerouslySetInnerHTML={{ __html: post.content || "<p>No content available for this post yet.</p>" }}
           />
 
           <div className="mt-12 pt-6 border-t border-border">
