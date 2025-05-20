@@ -217,7 +217,7 @@ export function SgpaToPercentageCalculator({
         </h1>
         <div className="flex flex-col items-center justify-center mt-5">
           <Image
-            src="/images/convert sgpa.png"
+            src="./images/convert sgpa.png"
             alt="How to convert SGPA into Percentage"
             width={600}
             height={200}
