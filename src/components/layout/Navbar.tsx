@@ -23,7 +23,7 @@ export function Navbar() {
         </Button>
 
         <Link href="/" className="flex items-center space-x-2 mr-auto">
-          <Image src='/images/logo.png' alt="Logo" width={100} height={50} />
+          <Image src='./images/logo.png' alt="Logo" width={100} height={50} />
         </Link>
         
         <div className="hidden md:flex items-center space-x-4 md:space-x-14">
