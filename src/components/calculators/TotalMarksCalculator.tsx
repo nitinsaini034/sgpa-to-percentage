@@ -49,7 +49,7 @@ export function TotalMarksCalculator({ setAppLevelResult }: TotalMarksCalculator
     
     const calculatedPercentage = (sumMarksObtained / sumTotalMarks) * 100;
     // setTotalPercentage(Math.max(0, Math.min(100, calculatedPercentage)));
-    setAppLevelResult({ value: Math.max(0, Math.min(100, calculatedPercentage)), label: "Overall Percentage", key: `tm-${Date.now()}` });
+    setAppLevelResult({ value: Math.max(0, Math.min(100, calculatedPercentage)), label: "Overall Percentage",  });
   };
   
   const handleReset = () => {
