@@ -178,35 +178,35 @@ export function SgpaToPercentageCalculator({
       <br />
       <hr className="mt-8" />
       <section className="flex-1 overflow-auto md:px-12 lg:p-8 w-full max-w-5xl mx-auto mt-2">
-        <h1 className="font-bold text-[20px] text-black">What is SGPA?</h1>
-        <p className="mt-5 text-[15px]">
+        <h1 className="font-bold text-[25px] text-black">What is SGPA?</h1>
+        <p className="mt-5 text-[20px]">
           SGPA, which stands for Semester Grade Point Average, reflects your
           academic performance during a particular semester. When you enroll in
           a course, it carries a specific credit value, and based on your marks,
           you receive a letter grade. SGPA essentially combines these elements
           to give you a clear summary of your accomplishments in that semester.
         </p>
-        <h1 className="font-bold text-[20px] text-black mt-5">
+        <h1 className="font-bold text-[25px] text-black mt-5">
           Importance of SGPA
         </h1>
         <ul className="list-disc list-outside">
-          <li className="mt-5 text-[15px]">
+          <li className="mt-5 text-[20px]">
             SGPA helps students check their academic performance on a semester
             basis.
           </li>
-          <li className="mt-5 text-[15px]">
+          <li className="mt-5 text-[20px]">
             By using SGPA, students identify their strengths and areas for
             improvement.
           </li>
-          <li className="mt-5 text-[15px]">
+          <li className="mt-5 text-[20px]">
             A strong SGPA can enhance a student's profile for internships, job
             placements, and admission to higher education programs.{" "}
           </li>
-          <li className="mt-5 text-[15px]">
+          <li className="mt-5 text-[20px]">
             Many institutions use SGPA to determine eligibility for addmission
             and scholarship purpose.
           </li>
-          <li className="mt-5 text-[15px]">
+          <li className="mt-5 text-[20px]">
             SGPS helps you compare yourself with other students.
           </li>
         </ul>
@@ -223,13 +223,13 @@ export function SgpaToPercentageCalculator({
             height={200}
           />
         </div>
-        <p className="mt-5 text-[15px] space-y-4">
+        <p className="mt-5 text-[20px] space-y-4">
           The process of converting SGPA to percentage is straightforward. SGPA
           is usually calculated on a 10.0 scale, and most universities follow a
           specific formula to convert it into a percentage. The most widely used
           formula is:
           <br />
-          <strong className="flex justify-center text-[#008080] text-[20px] mt-3">
+          <strong className="flex justify-center text-[#008080] text-[23px] mt-3">
             Percentage = (SGPA x 10) - 7.5
           </strong>{" "}
           <br />
@@ -246,10 +246,10 @@ export function SgpaToPercentageCalculator({
             percentage format.
           </div>
         </p>
-        <h1 className="font-bold text-[20px] text-black mt-5">
+        <h1 className="font-bold text-[25px] text-black mt-5">
           Why use Percentage instead of SGPA?
         </h1>
-        <p className="mt-5 text-[15px]">
+        <p className="mt-5 text-[20px]">
           While SGPA (Semester Grade Point Average) is a modern and efficient
           grading system widely used by universities, many institutions,
           organizations, and employers still prefer percentages to evaluate
