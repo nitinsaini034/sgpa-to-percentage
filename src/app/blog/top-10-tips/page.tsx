@@ -8,9 +8,9 @@ import type { BlogPost } from "@/lib/blog-data";
 import { getPostById } from "@/lib/blog-data";
 
 // Define the specific ID for this post
-const POST_ID = "understanding-gpa";
+const POST_ID = "sgpa-vs-cgpa";
 
-export default function UnderstandingGpaPage() {
+export default function SgpaVsCgpaPage() {
   const post = getPostById(POST_ID);
 
   if (!post) {
@@ -46,7 +46,7 @@ export default function UnderstandingGpaPage() {
                        prose-headings:text-primary prose-a:text-accent hover:prose-a:text-accent/80
                        prose-strong:text-card-foreground prose-blockquote:border-primary prose-blockquote:text-muted-foreground"
           />
-
+            <h1 className="text-2xl">Hello world!!</h1>
           <div className="mt-12 pt-6 border-t border-border">
             <Link href="/blog" className="inline-flex items-center text-accent hover:text-accent/80 font-medium group">
               <ArrowLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" />
