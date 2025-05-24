@@ -27,7 +27,7 @@ export default function SgpaVsCgpaPage() {
               alt={post.imageAlt || post.title}
               width={800}
               height={400}
-              className="flex flex-col items-center justify-center"
+              className="w-full flex flex-col items-center justify-center"
               data-ai-hint={post.imageHint || "article header"}
               priority
             />
