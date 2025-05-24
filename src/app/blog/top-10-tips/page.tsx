@@ -27,7 +27,7 @@ export default function SgpaVsCgpaPage() {
               alt={post.imageAlt || post.title}
               width={800}
               height={400}
-              className="w-full h-64 md:h-80 object-cover"
+              className="w-full h-96 md:h-80 object-cover"
               data-ai-hint={post.imageHint || "article header"}
               priority
             />
