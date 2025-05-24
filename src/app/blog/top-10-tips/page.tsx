@@ -27,16 +27,13 @@ export default function SgpaVsCgpaPage() {
               alt={post.imageAlt || post.title}
               width={800}
               height={400}
-              className="flex flex-col items-center justify-center"
+              className="w-full flex flex-col items-center justify-center"
               data-ai-hint={post.imageHint || "article header"}
               priority
             />
           )}
            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
            <div className="absolute bottom-0 left-0 p-6 md:p-8">
-            <CardTitle className="text-3xl md:text-4xl font-bold text-primary-foreground mb-2 break-words">
-              {post.title}
-            </CardTitle>
             <p className="text-sm text-muted-foreground/80">{post.date}</p>
           </div>
         </CardHeader>
