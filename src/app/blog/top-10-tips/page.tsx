@@ -34,7 +34,7 @@ export default function SgpaVsCgpaPage() {
           )}
            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
            <div className="absolute bottom-0 left-0 p-6 md:p-8">
-            <CardTitle className="text-3xl md:text-4xl font-bold text-primary-foreground mb-2 break-words">
+            <CardTitle className="text-xl md:text-4xl font-bold text-primary-foreground mb-2 break-words">
               {post.title}
             </CardTitle>
             <p className="text-sm text-muted-foreground/80">{post.date}</p>
