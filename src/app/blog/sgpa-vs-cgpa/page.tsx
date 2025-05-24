@@ -68,7 +68,7 @@ export async function generateMetadata() {
     };
   }
   return {
-    title: `${post.title} | EduCalculators Blog`,
+    title: `${post.title} | sgpa2percentages Blog`,
     description: post.excerpt,
   };
 }
