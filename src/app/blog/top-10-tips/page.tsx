@@ -8,7 +8,7 @@ import type { BlogPost } from "@/lib/blog-data";
 import { getPostById } from "@/lib/blog-data";
 
 // Define the specific ID for this post
-const POST_ID = "sgpa-vs-cgpa";
+const POST_ID = "top-10-tips";
 
 export default function SgpaVsCgpaPage() {
   const post = getPostById(POST_ID);

@@ -24,7 +24,7 @@ export const blogPosts: BlogPost[] = [
     id: "top-10-tips",
     title: "Top 10 tips for Academic success",
     date: "May 24, 2025",
-    excerpt: "",
+    excerpt: "If you want to improve your academic performance, check out these top 10 tips that can help you excel in your studies.",
     imageUrl: "./images/tips.png",
     imageAlt: "Top 10 tips for Academic success",
     imageHint: "Top 10 tips for Academic success",
