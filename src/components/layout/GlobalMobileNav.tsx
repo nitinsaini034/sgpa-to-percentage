@@ -1,10 +1,15 @@
-
 "use client";
 
-import { useMobileSidebar } from '@/contexts/MobileSidebarContext';
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
-import Link from 'next/link';
-import { GraduationCap } from 'lucide-react';
+import { useMobileSidebar } from "@/contexts/MobileSidebarContext";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+} from "@/components/ui/sheet";
+import Link from "next/link";
+import { GraduationCap } from "lucide-react";
+import Image from 'next/image';
 
 export function GlobalMobileNav() {
   const { isMobileSidebarOpen, setIsMobileSidebarOpen } = useMobileSidebar();
@@ -18,10 +23,19 @@ export function GlobalMobileNav() {
 
   return (
     <Sheet open={isMobileSidebarOpen} onOpenChange={setIsMobileSidebarOpen}>
-      <SheetContent side="left" className="w-[280px] p-0 flex flex-col bg-card md:hidden"> {/* Hide on md and above */}
+      <SheetContent
+        side="left"
+        className="w-[280px] p-0 flex flex-col bg-card md:hidden"
+      >
+        {" "}
+        {/* Hide on md and above */}
         <SheetHeader className="p-4 border-b flex flex-row items-center space-x-2">
-          <GraduationCap className="h-6 w-6 text-primary" />
-          <SheetTitle className="text-lg font-semibold text-primary">EduCalculators</SheetTitle>
+          <Image
+            src="/images/new_logo.png"
+            alt="Logo"
+            width={100}
+            height={50}
+          />
         </SheetHeader>
         <nav className="flex flex-col p-4 space-y-1 mt-2 flex-grow">
           {navLinks.map((link) => (
@@ -36,7 +50,9 @@ export function GlobalMobileNav() {
           ))}
         </nav>
         <div className="p-4 border-t mt-auto">
-            <p className="text-xs text-muted-foreground text-center">&copy; {new Date().getFullYear()} EduCalculators</p>
+          <p className="text-xs text-muted-foreground text-center">
+            &copy; {new Date().getFullYear()} EduCalculators
+          </p>
         </div>
       </SheetContent>
     </Sheet>
