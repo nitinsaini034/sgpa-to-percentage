@@ -4,18 +4,18 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <div className="container mx-auto py-8 flex-grow px-6 md:px-40">
-      <h1 className="text-3xl font-bold text-primary mb-8 text-center">About EduCalculators</h1>
+      <h1 className="text-3xl font-bold text-primary mb-8 text-center">About sgpa2percentage calculator</h1>
       
       <div className="bg-card p-6 md:p-8 rounded-lg shadow-md mb-8">
         <p className="text-lg text-card-foreground leading-relaxed mb-4">
-          EduCalculators is dedicated to providing students with easy-to-use and accurate academic calculation tools. 
+          sgpa2percentage is dedicated to providing students with easy-to-use and accurate academic calculation tools. 
           Our mission is to simplify complex calculations like SGPA, CGPA, and grade conversions, helping students 
           focus on their studies and achieve their academic goals.
         </p>
         <p className="text-card-foreground leading-relaxed">
           We understand the importance of precise academic tracking, and our suite of calculators is designed 
           to be intuitive, reliable, and accessible to everyone. Whether you're calculating your semester GPA or 
-          converting scores to percentages, EduCalculators is your trusted partner.
+          converting scores to percentages, sgpa2percentage is your trusted partner.
         </p>
       </div>
 
@@ -34,7 +34,7 @@ export default function AboutPage() {
         </div>
         <div className="rounded-lg overflow-hidden shadow-md">
            <Image 
-            src="https://placehold.co/600x400.png" 
+            src="images/about-us.jpg" 
             alt="Educational tools" 
             width={600} 
             height={400} 
