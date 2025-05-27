@@ -230,7 +230,7 @@ export function SgpaToPercentageCalculator({
           </li>
         </ul>
       </section>
-      <section className="flex-1 overflow-auto md:px-12 lg:p-8 w-full max-w-5xl mx-auto mt-2 text-[18px]">
+      <section className="flex-1 overflow-auto md:px-12 lg:p-8 w-full max-w-5xl mx-auto text-[18px]">
         <h1 className="font-bold text-[20px] text-[#008080]">How to calculate SGPA?</h1>
         <p className='mt-5'>To calculate your SGPA, you need two important pieces of information for each subject: the grade you received (converted into a grade point) and the credit assigned to that subject based on its academic weight.</p>
         <div className='flex flex-col md:flex-row gap-6 mt-5 items-center justify-center'>
