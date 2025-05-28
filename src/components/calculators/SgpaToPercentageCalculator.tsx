@@ -97,7 +97,7 @@ export function SgpaToPercentageCalculator({
     setAppLevelResult(null);
   };
 
-    const grades = [
+  const grades = [
     { letter: "O (Outstanding)", point: 10 },
     { letter: "A+ (Excellent)", point: 9 },
     { letter: "A (Very Good)", point: 8 },
@@ -113,7 +113,7 @@ export function SgpaToPercentageCalculator({
     { name: "Physics", grade: "8", credit: 3 },
     { name: "Hindi", grade: "6", credit: 2 },
     { name: "Chemistry", grade: "10", credit: 3 },
-    { name: "English", grade: "7", credit: 2 }
+    { name: "English", grade: "7", credit: 2 },
   ];
 
   return (
@@ -230,33 +230,51 @@ export function SgpaToPercentageCalculator({
           </li>
         </ul>
 
-        <h1 className="font-bold text-[20px] text-[#008080] mt-5">How to calculate SGPA?</h1>
-        <p className='mt-5'>To calculate your SGPA, you need two important pieces of information for each subject: the grade you received (converted into a grade point) and the credit assigned to that subject based on its academic weight.</p>
-        <div className='flex flex-col md:flex-row gap-6 mt-5 items-center justify-center'>
-          <div className='border-2 border-teal-400 rounded-xl p-6 bg-[#c0f8f86f] text-center shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-105 focus:scale-105 w-[90%] md:w-[45%]'>
-            <h2 className='text-black font-bold text-[20px] mb-3'>Grade Point</h2>
-            <p className='text-gray-700'>
-              A Grade Point is a numerical value assigned to a letter grade you receive in a subject.
-              It helps convert qualitative grades (like A, B, C) into quantitative scores for calculating SGPA and CGPA.
+        <h1 className="font-bold text-[20px] text-[#008080] mt-5">
+          How to calculate SGPA?
+        </h1>
+        <p className="mt-5">
+          To calculate your SGPA, you need two important pieces of information
+          for each subject: the grade you received (converted into a grade
+          point) and the credit assigned to that subject based on its academic
+          weight.
+        </p>
+        <div className="flex flex-col md:flex-row gap-6 mt-5 items-center justify-center">
+          <div className="border-2 border-teal-400 rounded-xl p-6 bg-[#c0f8f86f] text-center shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-105 focus:scale-105 w-[90%] md:w-[45%]">
+            <h2 className="text-black font-bold text-[20px] mb-3">
+              Grade Point
+            </h2>
+            <p className="text-gray-700">
+              A Grade Point is a numerical value assigned to a letter grade you
+              receive in a subject. It helps convert qualitative grades (like A,
+              B, C) into quantitative scores for calculating SGPA and CGPA.
             </p>
           </div>
 
-          <div className='border-2 border-teal-400 rounded-xl p-6 bg-[#c0f8f86f] text-center shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-105 focus:scale-105 w-[90%] md:w-[45%]'>
-            <h2 className='text-black font-bold text-[20px] mb-3'>Credit</h2>
-            <p className='text-gray-700'>
-              In a college or university, a credit (or credit hour) represents the amount of workload or learning time assigned to a subject.
-              It's used to measure how much effort a course requires over the semester.
+          <div className="border-2 border-teal-400 rounded-xl p-6 bg-[#c0f8f86f] text-center shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-105 focus:scale-105 w-[90%] md:w-[45%]">
+            <h2 className="text-black font-bold text-[20px] mb-3">Credit</h2>
+            <p className="text-gray-700">
+              In a college or university, a credit (or credit hour) represents
+              the amount of workload or learning time assigned to a subject.
+              It's used to measure how much effort a course requires over the
+              semester.
             </p>
           </div>
         </div>
         <div className="overflow-x-auto">
           {/* Grade Point Table */}
-          <h2 className="text-xl font-bold mt-5 text-[#008080]">Common Grade Point Table</h2>
+          <h2 className="text-xl font-bold mt-5 text-[#008080]">
+            Common Grade Point Table
+          </h2>
           <table className="min-w-full  border rounded-2xl shadow-md text-center mt-5">
             <thead className="bg-[#008080] text-white">
               <tr className="border border-gray-300">
-                <th className="px-6 py-3 font-medium border border-black">Letter Grade</th>
-                <th className="px-6 py-3 font-medium border border-black">Grade Point (GP)</th>
+                <th className="px-6 py-3 font-medium border border-black">
+                  Letter Grade
+                </th>
+                <th className="px-6 py-3 font-medium border border-black">
+                  Grade Point (GP)
+                </th>
               </tr>
             </thead>
 
@@ -269,9 +287,16 @@ export function SgpaToPercentageCalculator({
               ))}
             </tbody>
           </table>
-          <p className='text-red-500 text-sm mt-5'>⚠️ Note: This scale can vary slightly between universities, so it's always best to check your university’s grading policy.</p>
+          <p className="text-red-500 text-sm mt-5">
+            ⚠️ Note: This scale can vary slightly between universities, so it's
+            always best to check your university’s grading policy.
+          </p>
           {/* Example */}
-          <p className='mt-5'><strong className="text-[#008080]">Example: </strong> Let's understand how to calculates SGPA with the help of an example. Suppose you have the following grades and credits for your subjects:</p>
+          <p className="mt-5">
+            <strong className="text-[#008080]">Example: </strong> Let's
+            understand how to calculates SGPA with the help of an example.
+            Suppose you have the following grades and credits for your subjects:
+          </p>
           <table className="min-w-full border rounded-lg shadow-md text-center mt-5">
             <thead className="bg-[#008080] text-white">
               <tr className="border border-gray-300">
@@ -283,70 +308,124 @@ export function SgpaToPercentageCalculator({
             <tbody>
               {subjects.map((subject, index) => (
                 <tr key={index} className="hover:bg-gray-100">
-                  <td className="px-6 py-3 border border-gray-300">{subject.name}</td>
-                  <td className="px-6 py-3 border border-gray-300">{subject.grade}</td>
-                  <td className="px-6 py-3 border border-gray-300">{subject.credit}</td>
+                  <td className="px-6 py-3 border border-gray-300">
+                    {subject.name}
+                  </td>
+                  <td className="px-6 py-3 border border-gray-300">
+                    {subject.grade}
+                  </td>
+                  <td className="px-6 py-3 border border-gray-300">
+                    {subject.credit}
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
 
-          <div className='mt-5 border-1 border-gray-400 rounded-xl shadow-md p-4 '>
-            <div className='border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl'>
-              <p ><strong className="text-[#008080] underline">Step 1:</strong> In the first step, we need to multiply the credit point of each subject by its grade:</p>
-              <p className='mt-2'>Math: 9 x 4 = 36 <br /> Physics: 8 x 3 = 24 <br /> Hindi: 6 x 2 = 12 <br /> Chemistry: 8 x 3 = 24 <br /> English: 8 x 2 = 16</p>
+          <div className="mt-5 border-1 border-gray-400 rounded-xl shadow-md p-4 ">
+            <div className="border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl">
+              <p>
+                <strong className="text-[#008080] underline">Step 1:</strong> In
+                the first step, we need to multiply the credit point of each
+                subject by its grade:
+              </p>
+              <p className="mt-2">
+                Math: 9 x 4 = 36 <br /> Physics: 8 x 3 = 24 <br /> Hindi: 6 x 2
+                = 12 <br /> Chemistry: 8 x 3 = 24 <br /> English: 8 x 2 = 16
+              </p>
             </div>
-            <div className='border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl mt-5'>
-              <p ><strong className="text-[#008080] underline">Step 2:</strong> In the second step, add the multiplication result of the first step:</p>
-              <p className='mt-2'>36 + 24 + 12 + 24 + 16 = 112</p>
+            <div className="border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl mt-5">
+              <p>
+                <strong className="text-[#008080] underline">Step 2:</strong> In
+                the second step, add the multiplication result of the first
+                step:
+              </p>
+              <p className="mt-2">36 + 24 + 12 + 24 + 16 = 112</p>
             </div>
-            <div className='border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl mt-5'>
-              <p ><strong className="text-[#008080] underline">Step 3:</strong> In the third step, add the credit points of all subjects:</p>
-              <p className='mt-2'>4 + 3 + 2 + 3 + 2 = 14</p>
+            <div className="border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl mt-5">
+              <p>
+                <strong className="text-[#008080] underline">Step 3:</strong> In
+                the third step, add the credit points of all subjects:
+              </p>
+              <p className="mt-2">4 + 3 + 2 + 3 + 2 = 14</p>
             </div>
-            <div className='border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl mt-5'>
-              <p ><strong className="text-[#008080] underline">Step 4:</strong> Finally, divide the total from Step 2 by the total from Step 3 to get your SGPA:</p>
-              <p className='mt-2'>SGPA = Total of Step 2 / Total of Step 3 = 112 / 14 = 8.0</p>
+            <div className="border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl mt-5">
+              <p>
+                <strong className="text-[#008080] underline">Step 4:</strong>{" "}
+                Finally, divide the total from Step 2 by the total from Step 3
+                to get your SGPA:
+              </p>
+              <p className="mt-2">
+                SGPA = Total of Step 2 / Total of Step 3 = 112 / 14 = 8.0
+              </p>
             </div>
-            <div className='border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl mt-5'>
-              <p><strong className="text-[#008080] underline">Step 5:</strong> After completing all four steps, you get your SGPA i.e 8.0</p>
+            <div className="border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl mt-5">
+              <p>
+                <strong className="text-[#008080] underline">Step 5:</strong>{" "}
+                After completing all four steps, you get your SGPA i.e 8.0
+              </p>
             </div>
           </div>
         </div>
+        <p className="mt-5">After calculating the SGPA for the semester, we now clearly understand the process of converting it to a percentage using the standard formula, which helps us evaluate our academic performance in a more universally accepted format.</p>
         <h1 className="font-bold text-[20px] text-[#008080] mt-5">
           How to convert SGPA into Percentage?
         </h1>
-        <div className="flex flex-col items-center justify-center mt-0">
-          {/* <Image
+        <div className="flex flex-col items-center justify-center mt-5">
+          <Image
             src="/images/understand_sgpa.png"
             alt="How to convert SGPA into Percentage"
             width={600}
             height={200}
-          /> */}
+          />
         </div>
         <p className="mt-5 space-y-4">
-          The process of converting SGPA to percentage is straightforward. SGPA is usually calculated on a 10.0 scale, and most universities follow a specific formula to convert it into a percentage. The most widely used formula is:
+          The process of converting SGPA to percentage is straightforward. SGPA
+          is usually calculated on a 10.0 scale, and most universities follow a
+          specific formula to convert it into a percentage. The most widely used
+          formula is:
           <br />
-          <strong className="flex justify-center text-[#008080] text-[20px] mt-3">
-            Percentage = (SGPA x 10) - 7.5
-          </strong>{" "}
+          <div className="flex justify-center mt-3">
+            <strong className="text-black text-[20px] border border-teal-400 shadow-lg rounded-md px-4 py-2 bg-white">
+              Percentage = (SGPA x 10) - 7.5
+            </strong>
+          </div>
           <br />
           Now, we need to follow some steps to convert SGPA into percentage.
           <div className="mt-0">
-            <strong className="text-[#008080] ">Step 1: </strong>Multiply your SGPA by 10. For example, if your SGPA is 8.5, then 8.5 x 10 = 85.{" "} <br /><strong className="text-[#008080] ">Step 2: </strong>In the next step, we substract 7.5 <br /> <br />
-            In conclusion, converting SGPA to percentage is a simple process but must be done accurately. Knowing your exact percentage helps when percentage format.
+            <strong className="text-[#008080] ">Step 1: </strong>Multiply your
+            SGPA by 10. For example, if your SGPA is 8.5, then 8.5 x 10 = 85.{" "}
+            <br />
+            <strong className="text-[#008080] ">Step 2: </strong>In the next
+            step, we substract 7.5 <br /> <br />
+            In conclusion, converting SGPA to percentage is a simple process but
+            must be done accurately. Knowing your exact percentage helps when
+            percentage format.
           </div>
         </p>
         <h1 className="font-bold text-[20px] text-[#008080]  mt-5">
           Why use Percentage instead of SGPA?
         </h1>
         <p className="mt-5">
-          While SGPA (Semester Grade Point Average) is a modern and efficient grading system widely used by universities, many institutions, organizations, and employers still prefer percentages to evaluate academic performance because percentages offer a clearer and more universally understood representation of a student's achievements.{" "}
+          While SGPA (Semester Grade Point Average) is a modern and efficient
+          grading system widely used by universities, many institutions,
+          organizations, and employers still prefer percentages to evaluate
+          academic performance because percentages offer a clearer and more
+          universally understood representation of a student's achievements.{" "}
           <br /> <br />
-          Many forms and applications specifically ask for marks in percentage form when applying for jobs, internships, or higher studies. Government exams, scholarships, and several international universities also require academic scores in percentage format for eligibility and comparison purposes. Parents and students often find it easier to interpret percentages than grade points. <br /> <br /> For example, saying someone scored 82% is quite simpler than explaining what an SGPA of 8.7 represents. In conclusion, while SGPA is useful within universities, percentages are preferred for external comparisons, making them more practical and widely accepted across different platforms.
+          Many forms and applications specifically ask for marks in percentage
+          form when applying for jobs, internships, or higher studies.
+          Government exams, scholarships, and several international universities
+          also require academic scores in percentage format for eligibility and
+          comparison purposes. Parents and students often find it easier to
+          interpret percentages than grade points. <br /> <br /> For example,
+          saying someone scored 82% is quite simpler than explaining what an
+          SGPA of 8.7 represents. In conclusion, while SGPA is useful within
+          universities, percentages are preferred for external comparisons,
+          making them more practical and widely accepted across different
+          platforms.
         </p>
       </section>
-      
     </>
   );
 }
