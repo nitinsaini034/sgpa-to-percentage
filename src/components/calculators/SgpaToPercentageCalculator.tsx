@@ -197,7 +197,7 @@ export function SgpaToPercentageCalculator({
       <br />
       <hr className="mt-8" />
       <section className="flex-1 overflow-auto md:px-12 lg:p-8 w-full max-w-5xl mx-auto mt-2 text-[18px]">
-        <h1 className="font-bold text-[20px] text-black">What is SGPA?</h1>
+        <h1 className="font-bold text-[20px] text-[#008080]">What is SGPA?</h1>
         <p className="mt-5 ">
           SGPA, which stands for Semester Grade Point Average, reflects your
           academic performance during a particular semester. When you enroll in
@@ -205,7 +205,7 @@ export function SgpaToPercentageCalculator({
           you receive a letter grade. SGPA essentially combines these elements
           to give you a clear summary of your accomplishments in that semester.
         </p>
-        <h1 className="font-bold text-[20px] text-black mt-5">
+        <h1 className="font-bold text-[20px] text-[#008080] mt-5">
           Importance of SGPA
         </h1>
         <ul className="list-disc list-outside">
@@ -229,44 +229,9 @@ export function SgpaToPercentageCalculator({
             SGPS helps you compare yourself with other students.
           </li>
         </ul>
-      </section>
-      <section className="flex-1 overflow-auto md:px-12 lg:p-8 w-full max-w-5xl mx-auto text-[18px]">
-        <h1 className="font-bold text-[20px] text-center text-[#008080]">
-          How to convert SGPA into Percentage
-        </h1>
-        <div className="flex flex-col items-center justify-center mt-5">
-          <Image
-            src="/images/understand_sgpa.png"
-            alt="How to convert SGPA into Percentage"
-            width={600}
-            height={200}
-          />
-        </div>
-        <p className="mt-5 space-y-4">
-          The process of converting SGPA to percentage is straightforward. SGPA is usually calculated on a 10.0 scale, and most universities follow a specific formula to convert it into a percentage. The most widely used formula is:
-          <br />
-          <strong className="flex justify-center text-[#008080] text-[20px] mt-3">
-            Percentage = (SGPA x 10) - 7.5
-          </strong>{" "}
-          <br />
-          Now, we need to follow some steps to convert SGPA into percentage.
-          <div className="mt-0">
-            <strong className="text-[#008080] ">Step 1: </strong>Multiply your SGPA by 10. For example, if your SGPA is 8.5, then 8.5 x 10 = 85.{" "} <br /><strong className="text-[#008080] ">Step 2: </strong>In the next step, we substract 7.5 <br /> <br />
-            In conclusion, converting SGPA to percentage is a simple process but must be done accurately. Knowing your exact percentage helps when percentage format.
-          </div>
-        </p>
-        <h1 className="font-bold text-[20px] text-black mt-5">
-          Why use Percentage instead of SGPA?
-        </h1>
-        <p className="mt-5">
-          While SGPA (Semester Grade Point Average) is a modern and efficient grading system widely used by universities, many institutions, organizations, and employers still prefer percentages to evaluate academic performance because percentages offer a clearer and more universally understood representation of a student's achievements.{" "}
-          <br /> <br />
-          Many forms and applications specifically ask for marks in percentage form when applying for jobs, internships, or higher studies. Government exams, scholarships, and several international universities also require academic scores in percentage format for eligibility and comparison purposes. Parents and students often find it easier to interpret percentages than grade points. <br /> <br /> For example, saying someone scored 82% is quite simpler than explaining what an SGPA of 8.7 represents. In conclusion, while SGPA is useful within universities, percentages are preferred for external comparisons, making them more practical and widely accepted across different platforms.
-        </p>
-      </section>
-      <section className="flex-1 overflow-auto md:px-12 lg:p-8 w-full max-w-5xl mx-auto mt-2 text-[18px]">
-        <h1 className="font-bold text-[20px] text-[#008080]">How to calculate SGPA?</h1>
-        <p className='mt-5 p-6'>To calculate your SGPA, you need two important pieces of information for each subject: the grade you received (converted into a grade point) and the credit assigned to that subject based on its academic weight.</p>
+
+        <h1 className="font-bold text-[20px] text-[#008080] mt-5">How to calculate SGPA?</h1>
+        <p className='mt-5'>To calculate your SGPA, you need two important pieces of information for each subject: the grade you received (converted into a grade point) and the credit assigned to that subject based on its academic weight.</p>
         <div className='flex flex-col md:flex-row gap-6 mt-5 items-center justify-center'>
           <div className='border-2 border-teal-400 rounded-xl p-6 bg-[#c0f8f86f] text-center shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-105 focus:scale-105 w-[90%] md:w-[45%]'>
             <h2 className='text-black font-bold text-[20px] mb-3'>Grade Point</h2>
@@ -284,10 +249,10 @@ export function SgpaToPercentageCalculator({
             </p>
           </div>
         </div>
-        <div className="overflow-x-auto p-4">
+        <div className="overflow-x-auto">
           {/* Grade Point Table */}
-          <h2 className="text-xl font-semibold mb-4 text-center">Grade Point Table</h2>
-          <table className="min-w-full  border rounded-2xl shadow-md text-center">
+          <h2 className="text-xl font-bold mt-5 text-[#008080]">Common Grade Point Table</h2>
+          <table className="min-w-full  border rounded-2xl shadow-md text-center mt-5">
             <thead className="bg-[#008080] text-white">
               <tr className="border border-gray-300">
                 <th className="px-6 py-3 font-medium border border-black">Letter Grade</th>
@@ -348,7 +313,40 @@ export function SgpaToPercentageCalculator({
             </div>
           </div>
         </div>
+        <h1 className="font-bold text-[20px] text-[#008080] mt-5">
+          How to convert SGPA into Percentage?
+        </h1>
+        <div className="flex flex-col items-center justify-center mt-0">
+          {/* <Image
+            src="/images/understand_sgpa.png"
+            alt="How to convert SGPA into Percentage"
+            width={600}
+            height={200}
+          /> */}
+        </div>
+        <p className="mt-5 space-y-4">
+          The process of converting SGPA to percentage is straightforward. SGPA is usually calculated on a 10.0 scale, and most universities follow a specific formula to convert it into a percentage. The most widely used formula is:
+          <br />
+          <strong className="flex justify-center text-[#008080] text-[20px] mt-3">
+            Percentage = (SGPA x 10) - 7.5
+          </strong>{" "}
+          <br />
+          Now, we need to follow some steps to convert SGPA into percentage.
+          <div className="mt-0">
+            <strong className="text-[#008080] ">Step 1: </strong>Multiply your SGPA by 10. For example, if your SGPA is 8.5, then 8.5 x 10 = 85.{" "} <br /><strong className="text-[#008080] ">Step 2: </strong>In the next step, we substract 7.5 <br /> <br />
+            In conclusion, converting SGPA to percentage is a simple process but must be done accurately. Knowing your exact percentage helps when percentage format.
+          </div>
+        </p>
+        <h1 className="font-bold text-[20px] text-[#008080]  mt-5">
+          Why use Percentage instead of SGPA?
+        </h1>
+        <p className="mt-5">
+          While SGPA (Semester Grade Point Average) is a modern and efficient grading system widely used by universities, many institutions, organizations, and employers still prefer percentages to evaluate academic performance because percentages offer a clearer and more universally understood representation of a student's achievements.{" "}
+          <br /> <br />
+          Many forms and applications specifically ask for marks in percentage form when applying for jobs, internships, or higher studies. Government exams, scholarships, and several international universities also require academic scores in percentage format for eligibility and comparison purposes. Parents and students often find it easier to interpret percentages than grade points. <br /> <br /> For example, saying someone scored 82% is quite simpler than explaining what an SGPA of 8.7 represents. In conclusion, while SGPA is useful within universities, percentages are preferred for external comparisons, making them more practical and widely accepted across different platforms.
+        </p>
       </section>
+      
     </>
   );
 }
