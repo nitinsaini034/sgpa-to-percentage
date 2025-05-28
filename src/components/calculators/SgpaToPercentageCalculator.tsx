@@ -379,7 +379,7 @@ export function SgpaToPercentageCalculator({
             height={200}
           />
         </div>
-        <p className="mt-5 space-y-4">
+       <div className="mt-5 space-y-4 ">
           The process of converting SGPA to percentage is straightforward. SGPA
           is usually calculated on a 10.0 scale, and most universities follow a
           specific formula to convert it into a percentage. The most widely used
@@ -390,19 +390,37 @@ export function SgpaToPercentageCalculator({
               Percentage = (SGPA x 10) - 7.5
             </strong>
           </div>
-          <br />
           Now, we need to follow some steps to convert SGPA into percentage.
-          <div className="mt-0">
-            <strong className="text-[#008080] ">Step 1: </strong>Multiply your
-            SGPA by 10. For example, if your SGPA is 8.5, then 8.5 x 10 = 85.{" "}
-            <br />
-            <strong className="text-[#008080] ">Step 2: </strong>In the next
-            step, we substract 7.5 <br /> <br />
-            In conclusion, converting SGPA to percentage is a simple process but
-            must be done accurately. Knowing your exact percentage helps when
-            percentage format.
+          <div className="mt-5 border-1 border-gray-400 rounded-xl shadow-md p-4 ">
+            <div className="border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl">
+              <p>
+                <strong className="text-[#008080] underline">Step 1:</strong> In
+                the first step, we multiply the SGPA by 10:
+              </p>
+              <p className="mt-2">
+                SGPA = 8.0 <br />
+                8.0 x 10 = 80.0
+              </p>
+            </div>
+            <div className="border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl mt-5">
+              <p>
+                <strong className="text-[#008080] underline">Step 2:</strong> In
+                the second step, we subtract 7.5 from the result:
+              </p>
+              <p className="mt-2">
+                80.0 - 7.5 = 72.5
+              </p>
+            </div>
+            <div className="border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl mt-5">
+              <p>
+                <strong className="text-[#008080] underline">Step 3:</strong> After completing the above steps, we get the final percentage:
+              </p>
+              <strong>
+                <p className="mt-2">Final Percentage = 72.5%</p>
+              </strong>
+            </div>
           </div>
-        </p>
+        </div>
         <h1 className="font-bold text-[20px] text-[#008080]  mt-5">
           Why use Percentage instead of SGPA?
         </h1>
