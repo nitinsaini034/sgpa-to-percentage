@@ -317,12 +317,12 @@ export function SgpaToPercentageCalculator({
           How to convert SGPA into Percentage?
         </h1>
         <div className="flex flex-col items-center justify-center mt-0">
-          {/* <Image
+          <Image
             src="/images/understand_sgpa.png"
             alt="How to convert SGPA into Percentage"
             width={600}
             height={200}
-          /> */}
+          />
         </div>
         <p className="mt-5 space-y-4">
           The process of converting SGPA to percentage is straightforward. SGPA is usually calculated on a 10.0 scale, and most universities follow a specific formula to convert it into a percentage. The most widely used formula is:
