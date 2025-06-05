@@ -3,7 +3,7 @@ import React from 'react'
 function Table2() {
   return (
     <div>
-        <h1 className="font-bold text-[18px] text-[#008080] mt-5 text-center">CGPA To Percentage in 5.0 Grade Points
+        <h1 className="font-bold text-[18px] text-black mt-5 text-center">CGPA To Percentage in 5.0 Grade Points
 </h1>
       <div className="overflow-x-auto p-4">
       <table className="table-auto w-full border border-gray-300 border-collapse">

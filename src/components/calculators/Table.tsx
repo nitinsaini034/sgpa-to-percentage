@@ -3,18 +3,17 @@ import React from 'react'
 function Table() {
   return (
     <div>
-        <h1 className="font-bold text-[20px] text-black mt-8">
+        <h1 className="font-bold text-[20px] text-[#008080] mt-8">
           CGPA to Percentage Conversion table
         </h1>
-        <h1 className="font-bold text-[18px] text-[#008080] mt-5 text-center">CGPA To Percentage in 10 Grade Points
+        <h1 className="font-bold text-[18px] text-black mt-5 text-center">CGPA To Percentage in 10 Grade Points
 </h1>
       <div className="overflow-x-auto p-4">
       <table className="table-auto w-full border border-gray-300 border-collapse">
         <thead className="bg-gray-100">
           <tr>
             <th className="border border-black px-4 py-2 text-center">CGPA(10 Grade)</th>
-            <th className="border border-black px-4 py-2 text-center">Percentage in 10 Grade Scale
-</th>
+            <th className="border border-black px-4 py-2 text-center">Percentage in 10 Grade Scale </th>
           </tr>
         </thead>
         <tbody className="text-center">

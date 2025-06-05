@@ -175,8 +175,8 @@ export function SgpaToCgpaCalculator({
       </CalculatorShell>
       <hr className="mt-8" />
       <section className="flex-1 overflow-auto md:px-12 lg:p-8 w-full max-w-5xl mx-auto mt-2 text-[18px]">
-       <h1 className="font-bold text-[20px] text-black">Difference between CGPA and SGPA</h1>
-       <table className="border border-gray-500 text-[20px] ">
+       <h1 className="font-bold text-[20px] text-[#008080]">Difference between CGPA and SGPA</h1>
+       <table className="border border-gray-500 text-[20px] mt-5">
             <thead>
               <tr>
                 <th className="text-center font-semibold border border-gray-500">

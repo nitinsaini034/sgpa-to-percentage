@@ -11,6 +11,7 @@ import type { AppLevelResult } from "@/app/page"; // Import AppLevelResult type
 import Table from "@/components/calculators/Table";
 import Table2 from "@/components/calculators/Table2";
 import Table3 from "@/components/calculators/Table3";
+import Image from "next/image";
 
 interface CgpaToPercentageCalculatorProps {
   setAppLevelResult: (result: AppLevelResult | null) => void;
@@ -179,44 +180,90 @@ export function CgpaToPercentageCalculator({
       </CalculatorShell>
       <br />
       <hr className="mt-8" />
-      <section className="flex-1 overflow-auto md:px-12 lg:p-8 w-full max-w-5xl mx-auto mt-2">
-        <h1 className="font-bold text-[20px] text-black">What is CGPA?</h1>
-        <p className="mt-5 text-[15px]">
+      <section className="flex-1 overflow-auto md:px-12 lg:p-8 w-full max-w-5xl mx-auto mt-2 text-[18px]">
+        <h1 className="font-bold text-[20px] text-[#008080]">What is CGPA?</h1>
+        <p className="mt-5">
           CGPA (Cumulative Grade Point Average) is a widely used metric for
           assessing academic performance across multiple semesters. It provides
           a consolidated score that represents a student's overall achievements,
           similar to how a gymnast's all-around score summarizes their entire
           performance.
         </p>
-        <h1 className="font-bold text-[20px] text-black mt-8">
+        <h1 className="font-bold text-[20px] text-[#008080] mt-5">
           Importance of CGPA
         </h1>
         <ul className="list-disc list-outside">
-          <li className="mt-5 text-[15px]">
+          <li className="mt-5">
             CGPA provides an overall view of a student's academic progress
             across multiple semesters, rather than focusing on individual
             subject scores.
           </li>
-          <li className="mt-5 text-[15px]">
+          <li className="mt-5">
             Many universities use CGPA as a key factor in admissions and
             recruitment.
           </li>
-          <li className="mt-5 text-[15px]">
+          <li className="mt-5">
             A good CGPA increases the chances of securing scholarships,
             internships, and research opportunities.{" "}
           </li>
-          <li className="mt-5 text-[15px]">
+          <li className="mt-5">
             It offers a uniform grading system used by many universities, making
             it easier to compare student performance across institutions.
           </li>
-          <li className="mt-5 text-[15px]">
+          <li className="mt-5">
             CGPA shows your consistency and dedication to your studies over
             time.
           </li>
         </ul>
-        <Table/>
-        <Table2/>
-        <Table3/>
+        <Table />
+        <Table2 />
+        <Table3 />
+        <h1 className="font-bold text-[20px] text-[#008080] mt-5">
+          How to convert CGPA into Percentage?
+        </h1>
+        <div className="flex flex-col items-center justify-center mt-5">
+          <Image
+            src="/images/understand_cgpa.png"
+            alt="How to convert SGPA into Percentage"
+            width={600}
+            height={200}
+          />
+        </div>
+        <div className="mt-5 space-y-4">
+          The conversion of CGPA to Percentage involves a specific formula. The most widely accepted formula for 10.0 grade scale is:
+          <br />
+           <div className="flex justify-center mt-3">
+            <strong className="text-black text-[20px] border border-teal-400 shadow-lg rounded-md px-4 py-2 bg-white">
+              Percentage = (CGPA x 9.5)
+            </strong>
+          </div>
+          <p className="mt-5">
+          Let's understand the conversion of CGPA to Percentage with the help of an example. Assume that your CGPA is 8.2 on a 10.0 scale.
+          </p>
+          <div className="mt-5 border-1 border-gray-400 rounded-xl shadow-md p-4 ">
+            <div className="border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl">
+                <p>
+                <strong className="text-[#008080] underline">Step 1:</strong> In
+                the first step, we multiply the GCPA by 10:
+              </p>
+                <p className="mt-2">
+                CGPA = 8.2 <br />
+                8.2 x 9.5 = 77.9
+              </p>
+            </div>
+            <div className="border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl mt-5">
+               <p>
+                <strong className="text-[#008080] underline">Step 2:</strong> After multiplying, we get the result, this result is your final percentage.
+              </p>
+              <strong>
+                <p className="mt-2">Final Percentage = 77.9%</p>
+              </strong>
+            </div>
+
+          </div>
+          
+
+        </div>
       </section>
     </>
   );
