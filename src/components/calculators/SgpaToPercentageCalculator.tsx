@@ -390,7 +390,7 @@ export function SgpaToPercentageCalculator({
               Percentage = (SGPA x 10) - 7.5
             </strong>
           </div>
-          Now, we need to follow some steps to convert SGPA into percentage.
+          <p className='mt-5'>Now, we need to follow some steps to convert SGPA into percentage.</p>
           <div className="mt-5 border-1 border-gray-400 rounded-xl shadow-md p-4 ">
             <div className="border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl">
               <p>
