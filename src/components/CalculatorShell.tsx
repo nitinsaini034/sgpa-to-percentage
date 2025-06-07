@@ -15,8 +15,8 @@ export function CalculatorShell({
   return (
     <Card className="w-full max-w-2xl mx-auto shadow-lg">
       <CardHeader>
-        <CardTitle className="text-2xl font-bold text-primary text-center">{title}</CardTitle>
-        <CardDescription className='text-center'>{description}</CardDescription>
+        <CardTitle className="text-3xl font-bold text-primary text-center">{title}</CardTitle>
+        <CardDescription className='text-center font-normal'>{description}</CardDescription>
       </CardHeader>
       <CardContent className="space-y-6">
         {children}

@@ -116,7 +116,7 @@ export function CgpaToPercentageCalculator({
               step="0.01"
               value={cgpa}
               onChange={(e) => setCgpa(e.target.value)}
-              placeholder="e.g., 8.2 or 3.2"
+              placeholder="Enter your CGPA"
               required
             />
           </div>
@@ -215,9 +215,6 @@ export function CgpaToPercentageCalculator({
             time.
           </li>
         </ul>
-        <Table />
-        <Table2 />
-        <Table3 />
         <h1 className="font-bold text-[20px] text-[#008080] mt-5">
           How to convert CGPA into Percentage?
         </h1>
@@ -230,40 +227,33 @@ export function CgpaToPercentageCalculator({
           />
         </div>
         <div className="mt-5 space-y-4">
-          The conversion of CGPA to Percentage involves a specific formula. The most widely accepted formula for 10.0 grade scale is:
+          The conversion of CGPA (Cumulative Grade Point Average) to Percentage
+          involves a specific and standardised formula, which helps translate
+          your overall academic performance into a more commonly understood
+          metric. The most widely accepted formula for converting CGPA on a 10.0
+          grade scale is:
           <br />
-           <div className="flex justify-center mt-3">
+          <div className="flex justify-center mt-3">
             <strong className="text-black text-[20px] border border-teal-400 shadow-lg rounded-md px-4 py-2 bg-white">
               Percentage = (CGPA x 9.5)
             </strong>
           </div>
           <p className="mt-5">
-          Let's understand the conversion of CGPA to Percentage with the help of an example. Assume that your CGPA is 8.2 on a 10.0 scale.
+            Let's understand the conversion of CGPA to Percentage with the help
+            of a simple example.
+            <br /> <br />
+            Assume that your CGPA is 8.2 on a 10.0 scale, which is a common
+            grading system used by many universities. To convert this CGPA into
+            a percentage, we use a standard formula, which involves multiplying
+            the CGPA by a fixed conversion factor. Now, applying this formula to
+            our example: CGPA = 8.2, Percentage = 8.2 x 9.5 = 77.9%. <br />
+            So, if your CGPA is 8.2, your equivalent percentage would be 77.9%.
           </p>
-          <div className="mt-5 border-1 border-gray-400 rounded-xl shadow-md p-4 ">
-            <div className="border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl">
-                <p>
-                <strong className="text-[#008080] underline">Step 1:</strong> In
-                the first step, we multiply the GCPA by 10:
-              </p>
-                <p className="mt-2">
-                CGPA = 8.2 <br />
-                8.2 x 9.5 = 77.9
-              </p>
-            </div>
-            <div className="border-1 border-teal-400 hover:border-teal-500 rounded-2xl p-4 transition-all duration-300 transform shadow-md hover:shadow-xl active:shadow-xl focus:shadow-xl mt-5">
-               <p>
-                <strong className="text-[#008080] underline">Step 2:</strong> After multiplying, we get the result, this result is your final percentage.
-              </p>
-              <strong>
-                <p className="mt-2">Final Percentage = 77.9%</p>
-              </strong>
-            </div>
-
-          </div>
-          
-
         </div>
+        <Table />
+        <Table2 />
+        <Table3 />
+        
       </section>
     </>
   );

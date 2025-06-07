@@ -131,7 +131,7 @@ export function SgpaToPercentageCalculator({
               step="0.01"
               value={sgpa}
               onChange={(e) => setSgpa(e.target.value)}
-              placeholder="e.g., 8.5 or 3.5"
+              placeholder="Enter your SGPA"
               className="border-2 border-black-200 focus:border-black-300 focus:ring-0"
               required
             />

@@ -97,7 +97,7 @@ export function SgpaToCgpaCalculator({
               </Label>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div className="space-y-1">
-                  <Label htmlFor={`sgpa-${item.id}`} className="text-xs">
+                  <Label htmlFor={`sgpa-${item.id}`}>
                     SGPA *
                   </Label>
                   <Input
@@ -109,12 +109,12 @@ export function SgpaToCgpaCalculator({
                     onChange={(e) =>
                       updateItem(item.id, { sgpa: e.target.value })
                     }
-                    placeholder="e.g., 8.5"
+                    placeholder="Enter your SGPA"
                     required
                   />
                 </div>
                 <div className="space-y-1">
-                  <Label htmlFor={`credits-${item.id}`} className="text-xs">
+                  <Label htmlFor={`credits-${item.id}`}>
                     Total Credits in Semester *
                   </Label>
                   <Input

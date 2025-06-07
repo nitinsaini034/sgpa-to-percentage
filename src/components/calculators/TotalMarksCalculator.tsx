@@ -70,7 +70,7 @@ export function TotalMarksCalculator({ setAppLevelResult }: TotalMarksCalculator
             <Label className="text-sm font-medium text-muted-foreground">Subject {index + 1}</Label>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
               <div className="space-y-1">
-                <Label htmlFor={`subjectName-${item.id}`} className="text-xs">Subject Name (Optional)</Label>
+                <Label htmlFor={`subjectName-${item.id}`} >Subject Name (Optional)</Label>
                 <Input
                   id={`subjectName-${item.id}`}
                   type="text"
@@ -80,7 +80,7 @@ export function TotalMarksCalculator({ setAppLevelResult }: TotalMarksCalculator
                 />
               </div>
               <div className="space-y-1">
-                <Label htmlFor={`marksObtained-${item.id}`} className="text-xs">Marks Obtained *</Label>
+                <Label htmlFor={`marksObtained-${item.id}`}>Marks Obtained *</Label>
                 <Input
                   id={`marksObtained-${item.id}`}
                   type="number"
@@ -93,7 +93,7 @@ export function TotalMarksCalculator({ setAppLevelResult }: TotalMarksCalculator
                 />
               </div>
               <div className="space-y-1">
-                <Label htmlFor={`totalMarks-${item.id}`} className="text-xs">Total Marks *</Label>
+                <Label htmlFor={`totalMarks-${item.id}`} >Total Marks *</Label>
                 <Input
                   id={`totalMarks-${item.id}`}
                   type="number"
