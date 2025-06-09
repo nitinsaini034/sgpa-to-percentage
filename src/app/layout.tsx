@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Script from "next/script"; // Import the Script component
+import Script from "next/script";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
@@ -23,40 +23,27 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // IMPORTANT: Replace 'YOUR_GA_MEASUREMENT_ID' with your actual Google Analytics Measurement ID
-  const GA_MEASUREMENT_ID = "G-LJHK08DGWK";
-
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
-        suppressHydrationWarning={true} // Added to help with browser extension related hydration issues
       >
-        {/* Google Analytics (gtag.js) - Global site tag */}
-        {/* Ensure GA_MEASUREMENT_ID is replaced with your actual ID */}
-        {GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== "G-LJHK08DGWK" && (
-          <>
-            <Script
-              strategy="afterInteractive"
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-            />
-            <Script
-              id="gtag-init"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${GA_MEASUREMENT_ID}', {
-                    page_path: window.location.pathname,
-                  });
-                `,
-              }}
-            />
-          </>
-        )}
-        {/* End Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-LJHK08DGWK"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LJHK08DGWK');
+      `,
+          }}
+        />
 
         <MobileSidebarProvider>
           <Navbar />
